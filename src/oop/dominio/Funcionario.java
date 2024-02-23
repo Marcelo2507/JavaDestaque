@@ -2,9 +2,44 @@ package oop.dominio;
 
 public class Funcionario {
 
-	public String nome;
-	public int idade;
-	public double[] salarios;
+	private String nome;
+	private int idade;
+	private double[] salarios;
+	private double media = 0;
+	
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	
+	public void setIdade(int idade) {
+		this.idade = idade;
+	}
+	
+	public void setSalarios(double[] salarios) {
+		this.salarios = salarios;
+	}
+	
+	public void setMedia(double media) {
+		this.media = media;
+	}
+	
+	public String getNome() {
+		return nome;
+	}
+	
+	public int getIdade() {
+		return idade;
+	}
+	
+	public double[] getSalario() {
+		return salarios;
+	}
+	
+	public double geteMedia() {
+		return media;
+	}
+	
+	
 	
 	public void imprime() {
 		System.out.println(this.nome);
@@ -30,7 +65,7 @@ public class Funcionario {
 			return;
 		}
 		//calcular media do salario
-		double media = 0;
+		
 		for(double salario: salarios) {
 			media += salario;
 		}

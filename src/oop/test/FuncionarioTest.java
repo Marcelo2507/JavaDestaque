@@ -8,9 +8,10 @@ public class FuncionarioTest {
 		// TODO Auto-generated method stub
 		Funcionario funcionario = new Funcionario();
 		
-		funcionario.nome = "Luigi";
-		funcionario.idade = 04;
-		funcionario.salarios = new double[]{2000, 1000, 3000};
+		funcionario.setNome("Marconi");
+		funcionario.setIdade(42);
+		funcionario.setSalarios(new double[]{2000, 1000, 3000});
+	
 		
 		funcionario.imprime();
 	}

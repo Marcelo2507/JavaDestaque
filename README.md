@@ -1,4 +1,2 @@
 # JavaDestaque
 ## Treinamento de Java
-
-
