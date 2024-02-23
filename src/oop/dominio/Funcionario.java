@@ -5,7 +5,7 @@ public class Funcionario {
 	private String nome;
 	private int idade;
 	private double[] salarios;
-	private double media;
+	private double media = 0;
 	
 	public void setNome(String nome) {
 		this.nome = nome;
@@ -19,7 +19,9 @@ public class Funcionario {
 		this.salarios = salarios;
 	}
 	
-	//Média removida
+	public void setMedia(double media) {
+		this.media = media;
+	}
 	
 	public String getNome() {
 		return nome;
